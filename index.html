@@ -9,37 +9,41 @@
 </head>
 <body>
   <div id="mainContainer">
-    <h1>Sign Up!</h1>
+    <h1>Welcome to the World of Wonders</h1>
+    <p>Wonders are made true here, so Sign-Up now to get your individual wonder!</p>
+    
     <form action="">
       <div class="wrapper">
         <div>
           <label for="firstname">First Name</label>
-          <input type="text" name="firstname" id="firstname">
+          <input type="text" name="firstname" id="firstname" placeholder="First Name">
         </div>
         <div>
           <label for="lastname">Last Name</label>
-          <input type="text" name="lastname" id="lastname">
+          <input type="text" name="lastname" id="lastname" placeholder="Last Name">
         </div>
         <div>
           <label for="email">E-Mail*</label>
-          <input type="email" name="email" id="email" required>
+          <input type="email" name="email" id="email" placeholder="email@adress" required>
         </div>
         <div>
           <label for="phone">Phone Number</label>
-          <input type="tel" name="phone" id="phone">
+          <input type="tel" name="phone" id="phone" placeholder="+00 1234 5678 9">
         </div>
         <div>
           <label for="pw">Password*</label>
-          <input type="password" name="pw" id="pw" required>
+          <input type="password" name="pw" id="pw" placeholder="Password" required>
         </div>
         <div>
           <label for="cpw">Confirm Password*</label>
-          <input type="password" name="cpw" id="cpw" required>
+          <input type="password" name="cpw" id="cpw" placeholder="Confirm Password" required>
         </div>
       </div>
-      <button type="submit">Create Account</button>
+      <button type="submit" id="submit">Create Account</button>
       <p>Already have an account? <a href="/">Log In!</a></p>
     </form>
   </div>
+
+  <script src= "script.js"></script>
 </body>
 </html>

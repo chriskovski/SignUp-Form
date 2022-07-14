@@ -27,6 +27,11 @@ body {
   align-items: center;
 }
 
+h1{
+  color: purple;
+  margin-bottom: 0;
+}
+
 .wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -36,17 +41,32 @@ body {
   padding: 40px 20px;
   margin-right: 0;
 
-  border: 1px solid darkgrey;
+  border: 1px solid purple;
   border-radius: 5px;
-  box-shadow: inset 0 0 0.5em;
+  box-shadow: inset 0 0 0.8em purple;
 
-  background-color: rgb(215, 220, 220, 0.8);
+  background-color: rgb(128, 0, 128, 0.6);
+}
+
+label {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 input {
-  height: 30px;
+  padding: 15px;
   margin-bottom: 20px;
   border-radius: 5px;
+  font-size: large;
+}
+
+input:focus {
+  border-radius: 10px;
+  box-shadow: inset 0 0 0.5em purple;
+}
+
+input:invalid:focus {
+  box-shadow: inset 0 0 0.5em darkred;
 }
 
 form>div>div {
@@ -60,17 +80,31 @@ form>button {
   width: 150px;
   height: 50px;
   color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   background-color: purple;
+  border: none;
   border-radius: 5px;
+  box-shadow: 0 0 0.5em black;
   font-family: 'Edu NSW ACT Foundation', Tahoma, Sans-Serif;
   font-weight: bold;
   font-size: 1.1rem;
   float: right;
   margin-top: 20px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
-p{
+form>p{
   float: left;
-  margin-left: 10px;
+  background-color: rgb(128, 0, 128, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0.8em purple;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+a {
+  color: yellow;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
