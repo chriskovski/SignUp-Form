@@ -8,6 +8,38 @@
   <title>Sign Up!</title>
 </head>
 <body>
-  
+  <div id="mainContainer">
+    <h1>Sign Up!</h1>
+    <form action="">
+      <div class="wrapper">
+        <div>
+          <label for="firstname">First Name</label>
+          <input type="text" name="firstname" id="firstname">
+        </div>
+        <div>
+          <label for="lastname">Last Name</label>
+          <input type="text" name="lastname" id="lastname">
+        </div>
+        <div>
+          <label for="email">E-Mail*</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone">
+        </div>
+        <div>
+          <label for="pw">Password*</label>
+          <input type="password" name="pw" id="pw" required>
+        </div>
+        <div>
+          <label for="cpw">Confirm Password*</label>
+          <input type="password" name="cpw" id="cpw" required>
+        </div>
+      </div>
+      <button type="submit">Create Account</button>
+      <p>Already have an account? <a href="/">Log In!</a></p>
+    </form>
+  </div>
 </body>
 </html>
